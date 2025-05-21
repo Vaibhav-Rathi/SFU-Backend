@@ -1,0 +1,33 @@
+{
+  "name": "sfu-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "mediasoup",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "watch": "watchify public/index.js -o public/bundle.js -v -t [ babelify --extensions .js ]",
+    "build": "browserify public/index.js -o public/bundle.js -t [ babelify --extensions .js ]"
+  },
+  "author": "vaibhav",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "httpolyglot": "^0.1.2",
+    "mediasoup": "^3.15.8",
+    "mediasoup-client": "^3.6.51",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.1",
+    "nodemon": "^3.1.10",
+    "watchify": "^4.0.0"
+  }
+}

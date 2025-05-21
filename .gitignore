@@ -1,0 +1,8 @@
+.env
+
+# SSL keys
+/server/ssl/cert.pem
+/server/ssl/key.pem
+/server/ssl/keytmp.pem
+
+node_modules
